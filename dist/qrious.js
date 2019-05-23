@@ -401,7 +401,7 @@
       var i, j;
       var qrious = this.qrious;
       var moduleSize = this.getModuleSize(frame);
-      var offset = this.getOffset(frame);
+      var offset = parseInt((this.element.width-(frame.width*moduleSize))/2);
       var context = this.element.getContext('2d');
 
       context.fillStyle = qrious.foreground;
